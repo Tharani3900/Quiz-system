@@ -1,0 +1,291 @@
+@import"https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css";
+
+.quizzz-header
+{
+	margin-left:40%;
+	margin-top: 20px;
+}
+.quizzz-brand
+{
+	color: #FFD700;
+	font-size: 70px;
+	font-weight: 200px;
+}
+.my-navbar
+{
+	margin-bottom: 5%;
+	background-color: 	#008080;
+}
+.my-navbar-brand
+{
+	margin-left: 5%;
+	color: #FFD700;
+}
+.my-navbar-nav
+{
+	margin-right:5%;
+}
+.my-container
+{
+	width:70%;
+	margin: auto;
+}
+.my-row
+{
+	background-color: cyan;
+	width: 65%;
+	margin-left:10%;
+}
+.signupform 
+{
+	width:40%;
+	margin:50px auto;
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+	border: 2px solid white;
+	box-shadow: 0px 0px 5px 5px #DCDCDC;
+}
+.form-box .form-input
+{
+	border:none;
+	outline: none;
+	box-shadow: 0px 0px 2px 2px #DCDCDC;
+}
+.form-box .form-label
+{
+	font-size: 15px;
+	font-weight: 500; 
+}
+.alertdanger
+{
+	background-color: #FA8072;
+	border: 1px solid #DC143C;
+	padding: 5px;
+	border-radius: 2px;
+	text-align: center;
+	margin-bottom: 5px;
+}
+.submitbutton
+{
+	width: 60%;
+	border-radius: 5%;
+	background-color: #FFD700;
+	margin:auto;
+	text-align: center;
+	border: 2px solid #FFD700;
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-weight: 500;
+}
+.loginform
+{
+	width:40%;
+	margin:50px auto;
+	background: white;
+	border-radius: 10px;
+	padding: 20px;
+	border: 2px solid white;
+	box-shadow: 0px 0px 5px 5px #DCDCDC;
+}
+.card-box
+{
+	width: 75%;
+	height:300px;
+	background-color: white;
+	align-items: center;
+	border: 2px solid #FAEBD7;
+	
+}
+.card-row
+{
+	margin: 30px;
+}
+.card-box:hover
+{
+	box-shadow:  7px 7px #FFE4E1;
+}
+.card-container
+{
+	margin: 20px auto;
+}
+.card-img
+{
+	width:75%;
+	height:150px;
+}
+.card-title
+{
+	margin: 20px 30px;
+	height: 70px;
+}
+.card-link
+{
+	width: 20%;
+	border-radius: 10%;
+	background-color: #FFD700;
+	margin-left: 30px;
+	text-align: center;
+	border: 2px solid #FFD700;
+	letter-spacing: 2px;
+	font-size: 15px;
+	font-weight: 500;
+	color: black;
+}
+.quiz_container
+{
+	max-width: 55%;
+	min-height:400px;
+	margin:40px auto;
+	border-radius:10px;
+	padding:30px;
+	background-color: #76D7C4; 
+}
+@media screen and(max-width:450px)
+{
+	.quizzz-row 
+	{
+		margin-left:20px;
+		margin-right: 60px;
+	}
+	.quiz_container
+	{
+		max-width:90%;
+	}
+}
+@media screen and(max-width:1000px)
+{
+	.quizzz-row 
+	{
+		margin-left:20px;
+		margin-right: 60px;
+	}
+	.quiz_container
+	{
+		max-width:75%;
+	}
+}
+.question_number h3
+{
+	border-bottom: 2px solid #1C2833;
+	margin:0;
+	padding-bottom: 10px;
+	color: black;
+}
+.question
+{
+	font-size: 20px;
+	color:black;
+	padding: 15px 0;
+	display: block;
+}
+.options div
+{
+	background-color: #FCF3CF;
+	color:black;
+	font-size: 16px;
+	margin-bottom: 10px;
+	border-radius: 5px;
+	padding: 15px;
+	position: relative;
+	overflow: hidden;
+}
+.options div.correct 
+{
+	background-color: green;
+}
+.options div.wrong 
+{
+	background-color: red;
+}
+.options div.disabled
+{
+	pointer-events: none;
+}
+.next_btn .btn
+{
+	width:100px;
+	background-color: black;
+	color: white;
+	font-size: 18px;
+	position: relative;
+	top:90%;
+	left:40%;
+	border: none;
+}
+.quiz_over
+{
+	position: fixed;
+	top:0;
+	left:0;
+	width:100%;
+	height: 100%;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 20;
+	background-color: rgba(0,0,0,0.5);
+	padding: 20px;
+
+}
+.quiz_over .container
+{
+	text-align: center;
+	color: #512E5F;
+	width:500px;
+	height:200px;
+	background-color:#F4D03F;
+	border-radius: 10px;
+	font-family: cursive;
+}
+.quiz_over.show
+{
+	display: flex;
+}
+.quiz_over .container .percentage
+{
+	font-weight: bold;
+}
+.tryagain
+{
+	border:none;
+	text-decoration: none;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: #FF5733;
+	color: #F9EBEA;
+	width: 150px;
+	font-family: cursive;
+}
+.table-container .highscoretable  tr th
+{
+	background-color: yellow;
+}
+@media screen and(max-width:450px)
+{
+	.signupform
+	{
+		width:100%;
+	}
+	.loginform
+	{
+		width:100%;
+	}
+}
+@media screen and(max-width:1000px)
+{
+	.signupform
+	{
+		width:75%;
+		margin: 40px auto;
+
+	}
+	.loginform
+	{
+		width:75%;
+		margin: 40px auto;
+
+	}
+}
+
+
